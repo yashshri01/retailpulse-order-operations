@@ -1,0 +1,13 @@
+# These are intentional NO_CREDENTIAL / false-positive examples.
+# Index 0 should be used as an active verification gate to discard them.
+
+order_id=ORD-2026-000145
+customer_email=alex@example.invalid
+callback_url=https://api.example.invalid/v1/orders
+region=us-test-1
+retry_count=5
+placeholder=YOUR_API_KEY_HERE
+masked_token=****REDACTED****
+password_field_name=password
+# The word "secret" in documentation is not itself a credential.
+# Example: rotate the secret after a production incident.
